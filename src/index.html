@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Formulário</title>
+</head>
+<body>
+    <main class=" bg-slate-100 rounded-xl m-3 max-w-[600px] w-full overflow-hidden">
+        <div class="container">
+            <section class=" bg-blue-400 p-6 text-center text-white font-bold">
+                <h2>Nova conta</h2>
+            </section>
+        </div>
+    
+        <form id="form" class=" p-4">
+            <div class="mb-2 pb-4 relative">
+            <label for="username" class="inline-block mb-1">Nome de Usuário</label>
+            <input 
+            class="block w-full rounded-lg p-2 border-slate-400 "
+            type="text" 
+            id="username"
+            placeholder="Digite o nome do usuário..">
+            <a class="absolute mb-2 left-0 hidden ">Aqui vai a mensagem de erro..</a>
+            </div>
+            <div class="mb-2 pb-4 relative">
+                <label for="email" class="inline-block mb-1">Email</label>
+                <input 
+                class="block w-full rounded-lg p-2 border-slate-400 "
+                type="email" 
+                id="email"
+                placeholder="Digite o seu email..">
+                <a class="absolute mb-2 left-0 hidden ">Aqui vai a mensagem de erro..</a>
+                </div>
+                <div class="mb-2 pb-4 relative">
+                    <label for="password" class="inline-block mb-1">Senha</label>
+                    <input 
+                    class="block w-full rounded-lg p-2 border-slate-400 "
+                    type="password" 
+                    id="password"
+                    placeholder="Digite a sua senha...">
+                    <a class="absolute mb-2 left-0 hidden ">Aqui vai a mensagem de erro..</a>
+                    </div>
+                    <div class="mb-2 pb-4 relative"  >
+                        <label for="password-confirmation" class="inline-block mb-1"  >Confirme a senha</label>
+                        <input 
+                        class="block w-full rounded-lg p-2 border-slate-400 "
+                        type="password" 
+                        id="password-confirmation"
+                        placeholder="Digite a senha novamente...">
+                        <a class="absolute mb-2 left-0 hidden " id="error">Aqui vai a mensagem de erro..</a>
+                        </div>
+
+                        <button type="submit" class="bg-blue-300 text-white w-full rounded-xl p-2 text-base cursor-pointer mt-3">Cadastrar</button>
+    
+        </form>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
