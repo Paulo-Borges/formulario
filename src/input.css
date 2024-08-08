@@ -24,7 +24,8 @@ body {
     align-items: center;
 }
 
-#error {
-    color: #ff3b25; 
-
+.form-content {
+    color: orange;
 }
+
+

@@ -726,6 +726,12 @@ body {
   align-items: center;
 }
 
-#error {
+#error a {
   color: #ff3b25;
+  visibility: visible;
+}
+
+#error input {
+  border-color: #ff3b25;
+  background: #ff3b25;
 }
