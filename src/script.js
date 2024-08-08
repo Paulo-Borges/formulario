@@ -15,6 +15,16 @@ form.addEventListener("submit", (event) => {
  checkInputPassword()
 })
 
+email.addEventListener("blur", () => {
+ checkInputEmail()
+
+})
+
+username.addEventListener("blur", () => {
+ checkInputUsername()
+    
+})
+
 
 // Validação do Usuário 
 function checkInputUsername() {
@@ -53,9 +63,6 @@ function checkInputPasswordConfirmation() {
 }
 
 
-
-
-
 function checkInputEmail() {
     const emailValue = email.value
 
@@ -63,6 +70,7 @@ function checkInputEmail() {
         errorInput(email, "Preencha um email válido!")
     }
 }
+
 
 function errorInput(input, message) {
     const formItem = input.parentElement
